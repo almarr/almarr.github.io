@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Svalt | Almarr Ormarsson]]></title>
+  <link href="http://almarr.github.io/blog/categories/svalt/atom.xml" rel="self"/>
+  <link href="http://almarr.github.io/"/>
+  <updated>2013-06-14T19:38:48+00:00</updated>
+  <id>http://almarr.github.io/</id>
+  <author>
+    <name><![CDATA[Almarr Ormarsson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://almarr.github.io/blog/2013/06/13/test/"/>
+    <updated>2013-06-13T23:26:00+00:00</updated>
+    <id>http://almarr.github.io/blog/2013/06/13/test</id>
+    <content type="html"><![CDATA[<p>This is the real life.</p>
+
+<h2>Subheader</h2>
+
+<p>And some more text.</p>
+]]></content>
+  </entry>
+  
+</feed>
