@@ -440,8 +440,10 @@ ul li {
     padding: 8px;
     bottom: 14px; }
 
+.clear-float {
+  clear: both; }
+
 .site-footer {
-  clear: both;
   margin: 0;
   width: 100%;
   position: absolute;

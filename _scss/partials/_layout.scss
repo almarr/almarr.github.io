@@ -97,8 +97,11 @@ ul li {
   }
 }
 
-.site-footer {
+.clear-float {
   clear: both;
+}
+
+.site-footer {
   margin: 0;
   width: 100%;
   position: absolute;
