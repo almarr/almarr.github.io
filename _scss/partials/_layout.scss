@@ -29,7 +29,7 @@ body {
   display: inline-block;
   margin: 2em 2em 2em 0;
   padding: 0 $padding;
-  p {
+  div {
     margin: 0;
     text-align: right;
     span {
@@ -39,7 +39,7 @@ body {
   }
 }
 
-.blogarea {
+.content {
   padding: 0 $padding;
   margin: 2em 0;
   max-width: 30em;
@@ -68,6 +68,31 @@ body {
 
 ul li {
   margin-bottom: 1em;
+}
+
+
+.portimg {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3em;
+  padding: 10px;
+  border: 4px solid $fontcolor;
+  border-radius: 5px;
+  &:hover {
+    border-color: $lightgray;
+  }
+  img {
+    max-width: 100%;
+    width: 392px;
+  }
+  figcaption {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 0.8em;
+    padding: 8px;
+    bottom: 14px;
+  }
 }
 
 .site-footer {

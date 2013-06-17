@@ -352,6 +352,16 @@ a {
   a:hover {
     color: #244a7f; }
 
+p {
+  font-family: "Calluna", serif;
+  font-weight: 400; }
+
+strong {
+  font-weight: 600; }
+
+em {
+  font-style: italic; }
+
 body {
   min-height: 100%;
   width: 100%;
@@ -378,14 +388,14 @@ body {
   display: inline-block;
   margin: 2em 2em 2em 0;
   padding: 0 0.4em; }
-  .header p {
+  .header div {
     margin: 0;
     text-align: right; }
-    .header p span {
+    .header div span {
       font-weight: 600;
       border-top: 1px solid #bbbbbb; }
 
-.blogarea {
+.content {
   padding: 0 0.4em;
   margin: 2em 0;
   max-width: 30em;
@@ -407,6 +417,26 @@ body {
 
 ul li {
   margin-bottom: 1em; }
+
+.portimg {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3em;
+  padding: 10px;
+  border: 4px solid #222222;
+  border-radius: 5px; }
+  .portimg:hover {
+    border-color: #bbbbbb; }
+  .portimg img {
+    max-width: 100%;
+    width: 392px; }
+  .portimg figcaption {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 0.8em;
+    padding: 8px;
+    bottom: 14px; }
 
 .site-footer {
   margin: 0;
