@@ -1,5 +1,5 @@
 name: Almarr
 pygments: true
-exclude: ['Guardfile']
+exclude: ['Guardfile', 'CNAME']
 permalink: blog/:title.html
 paginate: 5

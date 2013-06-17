@@ -2,10 +2,14 @@ body {
   min-height: 100%;
   width: 100%;
   position: absolute;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  margin: $main-margin;
+  padding: $main-margin;
+  max-width: 52em;
+  margin: 0 auto;
 }
 
 .main-nav {
@@ -23,7 +27,7 @@ body {
 
 .header {
   display: inline-block;
-  margin: 2em 0;
+  margin: 2em 2em 2em 0;
   padding: 0 $padding;
   p {
     margin: 0;
@@ -59,16 +63,19 @@ body {
 .pagination {
   text-align: center;
   font-size: 0.8em;
-  margin-top: 3em;
+  margin: 3em;
+}
+
+ul li {
+  margin-bottom: 1em;
 }
 
 .site-footer {
+  margin: 0;
   width: 100%;
   position: absolute;
   bottom: 0;
-  margin-left: -$main-margin;
-  margin-right: -$main-margin;
-  padding: $padding*2;
+  padding: $padding*2 0;
   font-size: 0.8em;
   text-align: center;
   background: $fontcolor;
