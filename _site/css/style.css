@@ -396,6 +396,11 @@ body {
   display: block;
   text-align: right; }
 
+.pagination {
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 3em; }
+
 .site-footer {
   width: 100%;
   position: absolute;
