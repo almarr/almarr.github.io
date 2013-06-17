@@ -407,7 +407,9 @@ body {
   font-size: 0.8em;
   color: #bbbbbb; }
 .blogpost .more {
+  font-family: "Calluna" serif;
   display: block;
+  margin-top: -1em;
   text-align: right; }
 
 .pagination {
