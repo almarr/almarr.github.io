@@ -386,6 +386,7 @@ body {
 
 .header {
   display: inline-block;
+  float: left;
   margin: 2em 2em 2em 0;
   padding: 0 0.4em; }
   .header div {
