@@ -441,6 +441,7 @@ ul li {
     bottom: 14px; }
 
 .site-footer {
+  clear: both;
   margin: 0;
   width: 100%;
   position: absolute;
