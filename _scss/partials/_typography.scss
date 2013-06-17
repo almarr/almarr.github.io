@@ -1,0 +1,23 @@
+body {
+  font-family: "museo-sans", sans-serif;
+  font-weight: 400;
+  color: $fontcolor;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+h2,
+h3,
+h4, {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: $linkcolor;
+  &:hover {
+    color: $hovercolor;
+  }
+}

@@ -1,0 +1,5 @@
+name: Almarr
+pygments: true
+exclude: ['Guardfile']
+permalink: blog/:title.html
+paginate: 5
