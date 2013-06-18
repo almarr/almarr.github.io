@@ -112,6 +112,12 @@ ul li {
   text-align: center;
   background: $fontcolor;
   color: $bgcolor;
+  a {
+    color: $bgcolor;
+    &:hover {
+        color: $lightgray;
+    }
+  }
 }
 
 .typekit-badge {
