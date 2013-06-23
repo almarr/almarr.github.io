@@ -8,7 +8,6 @@ body {
 
 .container {
   padding: $main-margin;
-  max-width: 52em;
   margin: 0 auto;
 }
 
@@ -43,17 +42,18 @@ body {
 .content {
   padding: 0 $padding;
   margin: 2em 0;
-  max-width: 30em;
   float: right;
 }
   
 .blogpost {
   h2 {
-    margin: 0;
+    margin-bottom: -0.2em;
   }
   time {
-    font-size: 0.8em;
+    @include font-size(0.657);
+    line-height: 1;
     color: $lightgray;
+    margin: 0;
   }
   .more {
     font-family: "Calluna" serif;
@@ -65,11 +65,12 @@ body {
 
 .pagination {
   text-align: center;
-  font-size: 0.8em;
+  @include font-size (0.657);
   margin: 3em;
 }
 
 ul li {
+  @include font-size(1.063);
   margin-bottom: 1em;
 }
 
@@ -92,7 +93,7 @@ ul li {
     position: absolute;
     background: rgba(0,0,0,0.5);
     color: white;
-    font-size: 0.8em;
+    @include font-size(0.657);
     padding: 8px;
     bottom: 14px;
   }
@@ -108,7 +109,7 @@ ul li {
   position: absolute;
   bottom: 0;
   padding: $padding*2 0;
-  font-size: 0.8em;
+  @include font-size(0.657);
   text-align: center;
   background: $fontcolor;
   color: $bgcolor;

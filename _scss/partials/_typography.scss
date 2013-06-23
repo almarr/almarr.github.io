@@ -1,11 +1,23 @@
+html {
+  font-size: 100%;
+}
+
 body {
   font-family: "museo-sans", sans-serif;
   font-weight: 400;
+  @include font-size(1.063);
   color: $fontcolor;
 }
 
 h1 {
   font-weight: 100;
+  @include font-size(2.782);
+  line-height: 1;
+}
+
+h2 {
+  @include font-size(1.719);
+  line-height: 1;
 }
 
 h2,
@@ -25,6 +37,7 @@ a {
 p {
   font-family: "Calluna", serif;
   font-weight: 400;
+  line-height: 1.618;
 }
 
 strong {
