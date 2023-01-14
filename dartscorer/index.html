@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twenty6 Dart Scorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        
+        <div class="header">
+            <button class="btn btn-red btn-square btn-symbol" onclick="openSettings()">⚙</button>
+            <h1 class="app-title">TWENTY<span class="app-title-six">6</span></h1>
+            <button class="btn btn-green btn-square" onclick="openHelp()">?</button>
+        </div>
+
+        <div class="modal" id="settings-modal">
+            <div class="modal-content">
+                <button class="btn btn-red btn-square btn-symbol btn-close" onclick="closeSettings()">&times;</button>
+                <div class="modal-text">
+                    <p>Coming soon...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="help-modal">
+            <div class="modal-content">
+                <button class="btn btn-red btn-square btn-symbol btn-close" onclick="closeHelp()">&times;</button>
+                <div class="modal-text">
+                    <p>Coming soon...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="players-area">
+            <div class="player" id="player1">
+                <div contenteditable class="player-name">Player 1</div>
+                <div class="player-score" id="p1-score"></div>
+                <div class="player-outshot" id="p1-outshot"></div>
+                <div class="player-stats">
+                    <div class="stat-avg">
+                        <div class="stat-label">AVG</div>
+                        <div class="stat-number" id="p1-stat-avg"></div>
+                    </div>
+                    <div class="stat-darts">
+                        <div class="stat-label">DARTS</div>
+                        <div class="stat-number" id="p1-stat-darts"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player" id="player2">
+                <div contenteditable class="player-name">Player 2</div>
+                <div class="player-score" id="p2-score"></div>
+                <div class="player-outshot" id="p2-outshot"></div>
+                <div class="player-stats">
+                    <div class="stat-avg">
+                        <div class="stat-label">AVG</div>
+                        <div class="stat-number" id="p2-stat-avg"></div>
+                    </div>
+                    <div class="stat-darts">
+                        <div class="stat-label">DARTS</div>
+                        <div class="stat-number" id="p2-stat-darts"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="darts">
+            <div class="player-darts" id="p1-darts">
+                <div class="dart-box p1-dart-box">T20</div>
+                <div class="dart-box p1-dart-box"></div>
+                <div class="dart-box p1-dart-box"></div>
+                <div class="dart-total" id="p1-dart-total">= 60</div>
+            </div>
+            <div class="player-darts" id="p2-darts">
+                <div class="dart-box p2-dart-box" >1</div>
+                <div class="dart-box p2-dart-box" >5</div>
+                <div class="dart-box p2-dart-box" >20</div>
+                <div class="dart-total" id="p2-dart-total">= 26</div>
+            </div>
+        </div>
+
+        <div class="inputs">
+
+            <div class="top-row">
+                <button class="btn btn-dark" onclick="addDart(0)">No score</button>
+                <label class="btn-checkbox">
+                    <input type="checkbox" id="checkbox-double" onclick="toggleDouble()">
+                    <span class="btn btn-green">Double</span>
+                </label>
+                <label class="btn-checkbox">
+                    <input type="checkbox" id="checkbox-triple" onclick="toggleTriple()">
+                    <span class="btn btn-red">Triple</span>
+                </label>
+            </div>
+
+            <div class="numpad">
+                <button class="btn btn-light" onclick="addDart(1)"><span class="double-text">D</span><span class="triple-text">T</span>1</button>
+                <button class="btn btn-dark" onclick="addDart(2)"><span class="double-text">D</span><span class="triple-text">T</span>2</button>
+                <button class="btn btn-light" onclick="addDart(3)"><span class="double-text">D</span><span class="triple-text">T</span>3</button>
+                <button class="btn btn-dark" onclick="addDart(4)"><span class="double-text">D</span><span class="triple-text">T</span>4</button>
+                <button class="btn btn-light" onclick="addDart(5)"><span class="double-text">D</span><span class="triple-text">T</span>5</button>
+                <button class="btn btn-dark" onclick="addDart(6)"><span class="double-text">D</span><span class="triple-text">T</span>6</button>
+                <button class="btn btn-light" onclick="addDart(7)"><span class="double-text">D</span><span class="triple-text">T</span>7</button>
+                <button class="btn btn-dark" onclick="addDart(8)"><span class="double-text">D</span><span class="triple-text">T</span>8</button>
+                <button class="btn btn-light" onclick="addDart(9)"><span class="double-text">D</span><span class="triple-text">T</span>9</button>
+                <button class="btn btn-dark" onclick="addDart(10)"><span class="double-text">D</span><span class="triple-text">T</span>10</button>
+                <button class="btn btn-light" onclick="addDart(11)"><span class="double-text">D</span><span class="triple-text">T</span>11</button>
+                <button class="btn btn-dark" onclick="addDart(12)"><span class="double-text">D</span><span class="triple-text">T</span>12</button>
+                <button class="btn btn-light" onclick="addDart(13)"><span class="double-text">D</span><span class="triple-text">T</span>13</button>
+                <button class="btn btn-dark" onclick="addDart(14)"><span class="double-text">D</span><span class="triple-text">T</span>14</button>
+                <button class="btn btn-light" onclick="addDart(15)"><span class="double-text">D</span><span class="triple-text">T</span>15</button>
+                <button class="btn btn-dark" onclick="addDart(16)"><span class="double-text">D</span><span class="triple-text">T</span>16</button>
+                <button class="btn btn-light" onclick="addDart(17)"><span class="double-text">D</span><span class="triple-text">T</span>17</button>
+                <button class="btn btn-dark" onclick="addDart(18)"><span class="double-text">D</span><span class="triple-text">T</span>18</button>
+                <button class="btn btn-light" onclick="addDart(19)"><span class="double-text">D</span><span class="triple-text">T</span>19</button>
+                <button class="btn btn-dark" onclick="addDart(20)"><span class="double-text">D</span><span class="triple-text">T</span>20</button>
+            </div>
+
+            <div class="bottom-row">
+                <button class="btn btn-green" onclick="addDart(25)">Bullseye</button>
+                <button class="btn btn-red" onclick="addDart(50)">Double Bullseye</button>
+                <button class="btn btn-dark" onclick="undo()">⤺ Undo</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
