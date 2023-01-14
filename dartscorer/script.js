@@ -125,8 +125,8 @@ function addDart(dart) {
     }
 
     player.currentDarts[player.currentDart] = dartText;
-
-    if((player.score - dartValue < 0) || (player.score - dartValue == 0 && !isDouble)) {
+    let futureScore = player.score - dartValue;
+    if((futureScore < 0) || futureScore == 1 || (futureScore == 0 && !isDouble)) {
         let i = player.currentDart;
         player.currentDart = 3;
         player.currentTotal = 'BUST';
